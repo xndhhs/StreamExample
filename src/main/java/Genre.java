@@ -3,5 +3,6 @@ public enum Genre {
     HISTORY,
     FICTION,
     SCIFI,
+    FANTASY
 
 }

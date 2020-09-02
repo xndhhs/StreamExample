@@ -5,7 +5,7 @@ public class Book {
     private String author;
     private Genre genre;
     private boolean isLoaned;
-    private double loanedNumber;
+    private int loanedNumber;
 
     @Override
     public String toString() {
@@ -35,7 +35,7 @@ public class Book {
         return Objects.hash(name, author, genre, isLoaned, loanedNumber);
     }
 
-    public double getLoanedNumber() {
+    public int getLoanedNumber() {
         return loanedNumber;
     }
 
@@ -67,7 +67,7 @@ public class Book {
         this.genre = genre;
     }
 
-    public boolean isLoaned() {
+    public boolean isLoaned( Book book ) {
         return isLoaned;
     }
 
@@ -75,7 +75,7 @@ public class Book {
         isLoaned = loaned;
     }
 
-    public Book( String name, String author, Genre genre, boolean isLoaned, double loanedNumber ) {
+    public Book( String name, String author, Genre genre, boolean isLoaned, int loanedNumber ) {
         this.name = name;
         this.author = author;
         this.genre = genre;
